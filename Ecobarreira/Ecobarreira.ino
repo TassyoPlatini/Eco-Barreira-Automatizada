@@ -51,7 +51,6 @@ void loop() {
 
     digitalWrite(ledPin, HIGH);
     
-
     Serial.println("Objeto detectado! Motor girando 90° e LED aceso...");
     myStepper.step(512);
 
@@ -64,6 +63,5 @@ void loop() {
   } else {
     Serial.println("Distância maior que 5 cm. Motor parado e LED apagado.");
   }
-
   delay(10);
 }
